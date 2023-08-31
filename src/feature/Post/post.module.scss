@@ -1,0 +1,20 @@
+@import "../../shared/styles/vars.scss";
+.postWrapper {
+  width: 100%;
+  border: 1px solid $color-blue;
+  padding: 10px;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deletePostBtn {
+  @extend %btn;
+  border: 1px solid $color-error;
+  font-size: 14px;
+  color: $color-black;
+  font-weight: 400;
+}
+.title {
+  text-indent: 20px;
+}

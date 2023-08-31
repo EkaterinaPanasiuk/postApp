@@ -1,0 +1,9 @@
+@import "../../shared/styles/vars.scss";
+.filterWrapper {
+  width: 100%;
+}
+
+.searchInput,
+.sortSelect {
+  @extend %input;
+}

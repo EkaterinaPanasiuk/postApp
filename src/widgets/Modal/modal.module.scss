@@ -1,0 +1,34 @@
+@import "../../shared/styles/vars.scss";
+.modalExternalWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.579);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modalConteiner {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.modalExternalWrapper.active {
+  display: flex;
+}
+.closeModalBtn {
+  @extend %btn;
+  background-color: $color-error;
+  margin: 0 0 20px 0;
+}
+.modalInputs {
+  width: 100%;
+}
